@@ -540,3 +540,133 @@
 
 //     return 0;
 // }
+// unit 2
+// #include<iostream>
+// #include<string>
+// #include<iomanip>
+// using namespace std;
+
+// class Student
+// {
+//     int marks;
+//     string name;
+//     int arr[2][2];
+
+// public:
+//     Student()
+//     {
+//         marks=0;
+//         name="Unknown";
+//     }
+
+//     void setData(string name,int marks)
+//     {
+//         this->name=name;
+//         this->marks=marks;
+//     }
+
+//     void show()
+//     {
+//         cout<<"Name: "<<name<<endl;
+//         cout<<"Marks: "<<marks<<endl;
+//     }
+
+//     void setMatrix()
+//     {
+//         for(int i=0;i<2;i++)
+//             for(int j=0;j<2;j++)
+//                 cin>>arr[i][j];
+//     }
+
+//     void showMatrix()
+//     {
+//         for(int i=0;i<2;i++)
+//         {
+//             for(int j=0;j<2;j++)
+//                 cout<<arr[i][j]<<" ";
+//             cout<<endl;
+//         }
+//     }
+// };
+
+// int main()
+// {
+//     int a=10;
+//     int *p=&a;
+
+//     cout<<"Value: "<<a<<endl;
+//     cout<<"Pointer Value: "<<*p<<endl;
+//     cout<<"Address: "<<p<<endl;
+
+//     int arr[5]={10,20,30,40,50};
+//     int *ptr=arr;
+
+//     cout<<"Array: ";
+//     for(int i=0;i<5;i++)
+//         cout<<*(ptr+i)<<" ";
+//     cout<<endl;
+
+//     int **pp=&p;
+//     cout<<"Pointer to Pointer: "<<**pp<<endl;
+
+//     void *vp=&a;
+//     cout<<"Void Pointer: "<<*(int*)vp<<endl;
+
+//     int &ref=a;
+//     ref=50;
+//     cout<<"Reference: "<<a<<endl;
+
+//     Student s;
+//     s.setData("Prafull",90);
+//     s.show();
+
+//     Student *sp=&s;
+//     sp->show();
+
+//     Student students[2];
+//     students[0].setData("Aman",80);
+//     students[1].setData("Rahul",85);
+
+//     cout<<"Array of Objects:"<<endl;
+
+//     for(int i=0;i<2;i++)
+//         students[i].show();
+
+//     string str="Hello";
+//     string str2="World";
+
+//     cout<<"String: "<<str<<endl;
+//     cout<<"Length: "<<str.length()<<endl;
+
+//     str.append(" ");
+//     str.append(str2);
+
+//     cout<<"After Append: "<<str<<endl;
+
+//     str.push_back('!');
+//     cout<<"After Push Back: "<<str<<endl;
+
+//     str.pop_back();
+//     cout<<"After Pop Back: "<<str<<endl;
+
+//     cout<<"Substring: "<<str.substr(0,5)<<endl;
+
+//     int Student::*memberPtr=&Student::marks;
+//     s.setData("Prafull",95);
+
+//     cout<<"Pointer To Data Member: "<<s.*memberPtr<<endl;
+
+//     Student *objPtr=&s;
+//     cout<<"Using Object Pointer: "<<objPtr->*memberPtr<<endl;
+
+//     int matrix[2][3]={{1,2,3},{4,5,6}};
+
+//     cout<<"2D Array:"<<endl;
+
+//     for(int i=0;i<2;i++)
+//     {
+//         for(int j=0;j<3;j++)
+//             cout<<matrix[i][j]<<" ";
+//         cout<<endl;
+//     }
+// }
