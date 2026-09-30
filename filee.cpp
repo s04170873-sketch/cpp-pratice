@@ -21,7 +21,7 @@ int main(){
     my_file.close();
     }
     else{
-        cout<<"Unable to opne"<<endl;
+        cout<<"Unable to open file"<<endl;
         my_file.close();
     }
     //read-get;
