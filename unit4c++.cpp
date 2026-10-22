@@ -19,21 +19,22 @@ class counter{
             return *this;
         }
 
-        // void operator--(){
-        //     value--;
-        // }
+        void operator--(int){
+            value--;
+        }
 
-        // void operator!(){
-        //     value=!value;
-        // }
+        counter& operator--(){
+            value--;
+            return *this;
+        }
 
-        // void operator-(){
-        //     value=-value;
-        // }
+        void operator!(){
+            value=!value;
+        }
 
-        // counter operator-(){
-        //     return counter(-value);
-        // }
+        counter operator-(){
+            return counter(-value);
+        }
 
         void display(){
             cout<<"counter value "<<value<<endl;
@@ -41,18 +42,30 @@ class counter{
 };
 
 int main(){
-    // int n;
-    // cin>>n;
-
     counter c1(5);
 
     ++++++c1;
-
-    // --c1;
-    // cout<<"counter value "<<(-c1).value<<endl;
-
     c1.display();
-    cout<<c1.value<<endl;
+
+    ------c1;
+    c1.display();
+
+    c1++;
+    c1.display();
+
+    ++c1;
+    c1.display();
+
+    c1--;
+    c1.display();
+
+    --c1;
+    c1.display();
+
+    cout<<"Unary minus: "<<(-c1).value<<endl;
+
+    !c1;
+    c1.display();
 
     return 0;
 }
